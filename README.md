@@ -70,7 +70,7 @@ Further analysis will yield addtional insights on the customer segments.
 
 ## For More Information
 
-See the full analysis in the [Jupyter Notebook](./customer_segmentation.ipynb) or review this [presentation](./customer_segmentation_presentation.pdf).
+See the full analysis in the [Jupyter Notebook](./customer_segmentation_notebook.ipynb) or review this [presentation](./customer_segmentation_presentation.pdf).
 
 For additional info, contact Ruthy Yao at [zejia.yao@gmail.com](mailto:zejia.yao@gmail.com)
 
