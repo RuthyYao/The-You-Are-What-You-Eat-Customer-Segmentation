@@ -1,4 +1,4 @@
-![clustering-title-img](./images/clustering-title-img.PNG)
+![clustering-title-img](./images/clustering-title-img.png)
 
 # The "You Are What You Eat" Customer Segmentation
 
@@ -25,27 +25,39 @@ To determine the number of clusters that we want to split our data into, I use t
 
 ## Results and Insights
 
-I decided to split the customers into three clusters based on the WCSS score.
+Using the Elbow Curve Method, I decided to split the customers into three clusters.
 
 ![WCSS_by_k](./images/WCSS_by_k.png)
 
 
 Here is the cluster summary. 
 
-
-![customer_summary](./images/cluster_summary.png)
+| cluster |    Dairy |    Fruit |     Meat | Vegetables |
+|--------:|---------:|---------:|---------:|------------|
+|       1 | 0.220875 | 0.264605 | 0.376508 |   0.138011 |
+|       2 | 0.002382 | 0.637796 | 0.003696 |   0.356126 |
+|       3 | 0.363948 | 0.394152 | 0.029210 |   0.212690 |
 
 * **Cluster 1**  - Customers have relatively balanced spend across the product areas with "Meat" the highest proportion of their shopping basket.
 * **Cluster 2** - Customers barely spent any in "Diary" and "Meat" categories. Almost all of their shopping baskets are "Fruit" and "Vegetables". This indicates that they might be "Vegetarian Shoppers".
 * **Cluster 3** - Customers spend mainly on "Dairy", "Fruit" and "Vegetables", with only 3% on "Meat". Let's call them "Lacto-vegetarian".
+<br>
+  
+Below table compares the customer visit and spending between three clusters.
+
+| **cluster** | **visit_count** | **Annual_spend** | **basket** |
+|------------:|----------------:|-----------------:|------------|
+|           1 |        6.212500 |      1982.184625 |  26.588660 |
+|           2 |        4.446602 |      1402.195534 |  26.278410 |
+|           3 |        5.404199 |      1513.168819 |  23.333225 |
+
+We can see that Cluster 1 customers have the most frequent visits to the store hence the largest annual spends. Whereas Cluster 2 customer visit less than the other two groups. Cluster 3 customers' average spend per visit is smaller than the other two groups.
  
 ## Applications
 
-Even though this is a simple solution, based upon high level product areas it will help leaders in the business, and category managers gain a clearer understanding of the customer base.Tracking these customers over time would allow ABC Grocery to more quickly react to dietary trends, and adjust their messaging and inventory according. 
-
 Based upon these clusters, ABC Grocery will be able to target customers more accurately - promoting products & discounts to customers that are truly relevant to them - overall enabling a more customer focused communication strategy.
 
-The visits and shopping basket analysis indicates that there is opportunity to increase the visit frequency from the cluster 2 "Vegetarian Shoppers". For example, ABC Grocery could send more seasonal promotions to attract more store visits. There is also opportunity to expand the shopping basket in cluster 3 "Lacto- vegetarian" shoppers. For instance, ABC could consider increase the product range for the categories, giving customers in this cluster more choices to select.
+The visits and shopping basket analysis indicates that there is opportunity to increase the visit frequency from the cluster 2 "Vegetarian Shoppers". For example, ABC Grocery could send more seasonal promotions to attract more store visits. There is also opportunity to expand the shopping basket in cluster 3 "Lacto- vegetarian" shoppers. For instance, ABC could consider increasing the range of the products for these categories, so customers have more product choices for them to add to their basket.
 
 ### Next Steps
 
