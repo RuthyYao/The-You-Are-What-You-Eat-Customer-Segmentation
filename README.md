@@ -8,7 +8,7 @@
 
 ABC Grocery Store has accumulated large amount of data from customers' day-to-day shopping. The wealth of the data could render the leadership team invaluable insights into their customers. 
 
-This project provides a customer segmentation based on the relative weight of the customer's spend across the product categories. Applying the Kmeans Clustering algorithm, we grouped the customers into three segments. The leadership team can use this segmentatiion to optimize their campaign and promotional offering, improve the inventory planning and drive more sales.  
+This project provides a customer segmentation based on the relative weight of the customer's spend across the product categories. Applying the K-means Clustering algorithm, we grouped the customers into three segments. The leadership team can use this segmentation to optimize their campaign and promotional offering, improve the inventory planning and drive more sales.  
 
 ## Business Problem
 
